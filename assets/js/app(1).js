@@ -32,7 +32,7 @@ operationForm.addEventListener('submit', (e) => {
   
 });
 
-
+// ********* calcul du total ********************************************************************
 function fetchSomme () {
   const somme = localStorage.getItem('somme');
   if (somme !== null) {
