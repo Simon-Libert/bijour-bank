@@ -64,14 +64,16 @@ console.table(getOps); //table affiche les tableaux et c'est beau !
 let soldeDebit = 0;
 let soldeCredit = 0;
 
-getOps.forEach(function (getOp) {
-	if (getOp.operator == 'credit') {
-		soldeCredit += parseInt(getOp.montant);
-	} else {
-		soldeDebit -= parseInt(getOp.montant);
-	}
-});
-
+if (getOps !== null) {
+	getOps.forEach(function (getOp) {
+		if (getOp.operator == 'credit') {
+			soldeCredit += parseInt(getOp.montant);
+		} else {
+			soldeDebit += parseInt(getOp.montant);
+		}
+	});
+}
+	
 document.getElementById('solde').innerText = soldeCredit - soldeDebit + '€';
 
 // ****************************séparation credit debit et tout ***********************************
