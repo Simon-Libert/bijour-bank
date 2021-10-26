@@ -164,6 +164,17 @@ function init(operationData) {
 
 init(operationData);
 
+// function graphMove(operationData) {
+// 	const operationData = JSON.parse(localStorage.getItem('operationData'));
+// 	operationData.forEach(value, key => {
+// 	return {	
+// 		addTemperature(operationData[key]);
+// 	}
+// 	});
+
+// }
+
+
 // *************************************************************************************************************************
 
 /**
